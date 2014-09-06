@@ -4,7 +4,35 @@
         <meta charset="UTF-8" />
         <title>Lambdas</title>
         <script>
-
+/*esto define la varibale con funcion */
+ var buenos_dias = function(){
+                alert("buenos días");
+            };
+            
+            
+ var buenas_noches = function(){
+                alert("buenas noches");
+            };
+           /*funcion que recibe funcion como parametro*/
+          /*mejor conocidas como cloudshuts ya que encapsula otras funcion o nes*/
+          
+             function saludar(saludos){
+                saludos();
+            }
+            
+            var unaVariable= 100;/*variable de una libreria global que se importo*/
+           
+            var cambiarValor = function(){
+            	var unaVariable= 200;            	
+            };
+            
+            cambiarValor();
+            document.write("<p> la variable vale" + unaVariable);
+            
+            /*esto ejecuta la funcion que guardo el parametro*/
+             saludar(buenos_dias);
+            saludar(buenas_noches);
+           
         </script>
     </head>
     <body>
